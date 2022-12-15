@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="continer">
+      <!-- صورة الخلفية -->
+      <div class="BGD">
+        <img src="img/logo.png" alt="" />
+      </div>
+
+      <!-- البطاقة الرئيسية -->
+      <div class="main">
+        <div>
+          <img src="./img/logo.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Start Sender محتويات المرسل  -->
+      <div class="sender">
+        <div class="ticket">
+          <div class="name">اسم المرسل</div>
+          <input type="text" />
+        </div>
+        <div class="ticket">
+          <div class="name">رقم المرسل</div>
+          <input type="text" />
+        </div>
+      </div>
+      <!-- End Sender محتويات المرسل  -->
+
+      <!-- Start reciever محتويات المستقبل  -->
+      <div class="reciever">
+        <div class="ticket">
+          <div class="name">اسم المستلم</div>
+          <input type="text" />
+        </div>
+        <div class="ticket">
+          <div class="name">رقم المستلم</div>
+          <input type="text" />
+        </div>
+        <div class="ticket">
+          <div class="name" style="padding-left: 43px">الوجهة</div>
+          <input type="text" />
+        </div>
+      </div>
+      <!-- End reciever محتويات المستقبل  -->
+
+      <!-- Start Contain محتويات الامانة  -->
+      <div class="contain">
+        <div class="title">محتويات الأمانة</div>
+        <div class="threeDivs">
+          <!-- القسم الاول من 1 الى 5 -->
+          <div class="part1">
+            <div class="ticket">
+              <div class="name">1</div>
+              <input type="text" />
+            </div>
+            <div class="ticket">
+              <div class="name">2</div>
+              <input type="text" />
+            </div>
+            <div class="ticket">
+              <div class="name">3</div>
+              <input type="text" />
+            </div>
+            <div class="ticket">
+              <div class="name">4</div>
+              <input type="text" />
+            </div>
+            <div class="ticket">
+              <div class="name">5</div>
+              <input type="text" />
+            </div>
+          </div>
+          <!-- العمود الفاصل -->
+          <div class="line"></div>
+          <!-- القسم الثاني من 6 الى 10 -->
+          <div class="part2">
+            <div class="ticket">
+              <div class="name">6</div>
+              <input type="text" />
+            </div>
+            <div class="ticket">
+              <div class="name">7</div>
+              <input type="text" />
+            </div>
+            <div class="ticket">
+              <div class="name">8</div>
+              <input type="text" />
+            </div>
+            <div class="ticket">
+              <div class="name">9</div>
+              <input type="text" />
+            </div>
+            <div class="ticket">
+              <div class="name" style="padding-left: 1px">10</div>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contain محتويات الامانة  -->
+
+      <!-- Start information معلومات التحويل -->
+      <div class="information">
+        <!-- Cost التكلفة -->
+        <div class="infoCont">
+          <div class="cost infoBox">
+            <div class="ticket">
+              <div class="name" style="padding-left: 1px">التكلفة</div>
+              <input type="text" />
+            </div>
+          </div>
+          <!-- packages عدد الطرود -->
+          <div class="packages infoBox">
+            <div class="ticket">
+              <div class="name" style="padding-left: 1px">عدد الطرود</div>
+              <input type="text" />
+            </div>
+          </div>
+          <!-- weight الوزن -->
+          <div class="weight infoBox">
+            <div class="ticket">
+              <div class="name" style="padding-left: 1px">الوزن</div>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End information معلومات التحويل -->
+
+      <!-- Start conditions شروط التحويل  -->
+      <div class="conditions box">
+        <div class="title">شروط الشحن</div>
+        <div class="conds">
+          <ul>
+            <li>لا تسلم الأمانة قبل دفع قيمة الشحن</li>
+            <li>الشركة غير مسؤولة عن الشحن بعد الاستلام من مكتب التسليم</li>
+            <li>تقع المسؤلية القانونية والجمركية على عاتق المرسل والمستلم</li>
+            <li>
+              لا يحق للمرسل والمستلم المالبة بالشحن بعد مضي ثلاثة اشهر من
+              الارسال
+            </li>
+            <li>تختص محاكم دولة قطر في فض اي نزاع بين الطرفين</li>
+            <li>
+              الشركة ومكتب التسليم غير مسؤولين عن اتلاف المواد من قبل الجهات
+              المختصة
+            </li>
+            <li>
+              لا تتحمل الشركة الشاحنة اي مسؤولية ناتجة عن تلف او فقدان او مصادرة
+              المواد المنقولة
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End conditions شروط التحويل  -->
+    </div>
+  </body>
+</html>
+
+<!-- <script>
+  let senderCont = document.createElement("div");
+  document.querySelector(".contain").appendChild(senderCont);
+  senderCont.classList.add("senderCont");
+  for (let i = 0; i < 5; i++) {
+    let name = document.createElement("div");
+    name.innerHTML = i + 1;
+    name.classList.add("name");
+    document
+      .querySelector(".contain ")
+      .querySelector(".senderCont")
+      .appendChild(name);
+    let input = document.createElement("input");
+    document
+      .querySelector(".contain")
+      .querySelector(".senderCont")
+      .appendChild(input);
+  }
+</script> -->
